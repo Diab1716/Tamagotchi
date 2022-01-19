@@ -9,8 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, universe! Pleased to meet you!")
-            .padding()
+        ZStack{
+            Rectangle()
+                .foregroundColor(.yellow)
+                .edgesIgnoringSafeArea(.all)
+            VStack(spacing:20){
+                Image("")
+                Text("Stats:")
+                Button("Feed Meal", action: {})
+                Button("Feed Snack", action: {})
+                Button("Play", action: {})
+                Button("Clean", action: {})
+                Button("Give Medicine", action: {})
+                
+            }
+            
+        }
     }
 }
 
